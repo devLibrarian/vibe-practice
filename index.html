@@ -1,14 +1,156 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>테스트 피부과</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#333;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2aa6a4;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.hero{
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+    url("https://images.unsplash.com/photo-1588776814546-1ffcf47267a5");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:12px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:25px;
+    background:#2aa6a4;
+    color:white;
+    cursor:pointer;
+}
+
+.section{
+    padding:80px 40px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.services{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+<header>
+<div class="logo">테스트 피부과</div>
+
+<nav>
+<a href="#">병원소개</a>
+<a href="#">진료안내</a>
+<a href="#">피부시술</a>
+<a href="#">온라인예약</a>
+<a href="#">오시는길</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>건강하고 아름다운 피부</h1>
+<p>전문의가 직접 진료하는 피부과</p>
+<button>온라인 예약</button>
+</section>
+
+<section class="section">
+<h2>주요 진료 분야</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>여드름 치료</h3>
+<p>개인 피부 상태에 맞는 맞춤 치료</p>
+</div>
+
+<div class="card">
+<h3>레이저 시술</h3>
+<p>최신 레이저 장비를 활용한 치료</p>
+</div>
+
+<div class="card">
+<h3>피부 관리</h3>
+<p>전문적인 피부 관리 프로그램</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 테스트 사이트 | 서울시 강남구</p>
+</footer>
+
 </body>
 </html>
