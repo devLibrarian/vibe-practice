@@ -1,160 +1,220 @@
+
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>테스트 피부과</title>
-<link rel="stylesheet" href="style.css">
-<style>
-body{
-    margin:0;
-    font-family: 'Noto Sans KR', sans-serif;
-    color:#333;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Dermatology Clinic</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="홈으로 이동">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-kicker">Premium Skin Clinic</span>
+            <span class="brand-name">CLINIC NAME</span>
+          </span>
+        </a>
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:white;
-    box-shadow:0 2px 5px rgba(0,0,0,0.05);
-}
+        <nav class="nav" aria-label="주요 메뉴">
+          <a href="#philosophy">Our Philosophy</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#programs">Programs</a>
+          <a href="#standards">Our Standards</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#2aa6a4;
-}
+        <a href="#contact" class="header-cta">상담 예약하기</a>
+      </div>
+    </header>
 
-nav a{
-    margin:0 15px;
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
-}
+    <main id="top">
+      <section class="hero">
+        <svg class="hero-svg" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1038 62C1172 98 1275 192 1363 286C1436 364 1504 468 1608 502" stroke="rgba(72,111,106,0.10)" stroke-width="1.5" />
+          <path d="M901 133C1048 151 1184 256 1278 372C1358 470 1410 582 1524 644" stroke="rgba(72,111,106,0.08)" stroke-width="1.5" />
+          <path d="M812 42C916 76 1008 144 1082 228C1144 300 1191 387 1282 440" stroke="rgba(216,195,165,0.12)" stroke-width="1.5" />
+          <ellipse cx="1260" cy="280" rx="250" ry="330" stroke="rgba(72,111,106,0.07)" stroke-width="1.2" />
+          <ellipse cx="1370" cy="390" rx="160" ry="220" stroke="rgba(216,195,165,0.10)" stroke-width="1.2" />
+        </svg>
 
-.hero{
-    height:500px;
-    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-    url("https://images.unsplash.com/photo-1588776814546-1ffcf47267a5");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    text-align:center;
-}
+        <div class="container hero-inner">
+          <div class="eyebrow">Premium Dermatology Clinic</div>
+          <h1>정제된 공간에서 시작되는<br />프리미엄 피부과 진료</h1>
+          <p class="hero-lead">
+            성형외과 기반의 미적 기준과 피부과 진료의 전문성을 바탕으로,
+            개인의 피부 상태와 노화 고민에 맞춘 정교한 솔루션을 제공합니다.
+          </p>
+          <p class="hero-sub">
+            품격 있는 입지와 차분한 진료 환경 속에서, 보다 프라이빗하고 밀도 높은 피부과 경험을 만나보실 수 있습니다.
+          </p>
 
-.hero h1{
-    font-size:42px;
-    margin-bottom:10px;
-}
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">상담 예약하기</a>
+            <a href="#programs" class="btn-secondary">대표 시술 보기</a>
+          </div>
 
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
-}
+          <div class="hero-points">
+            <div class="hero-point"><span class="hero-point-dot"></span><span>정교한 미적 기준과 진단 설계</span></div>
+            <div class="hero-point"><span class="hero-point-dot"></span><span>해부학적 이해를 바탕으로 한 맞춤 접근</span></div>
+            <div class="hero-point"><span class="hero-point-dot"></span><span>프리미엄 장비와 복합 시술 설계</span></div>
+            <div class="hero-point"><span class="hero-point-dot"></span><span>프라이빗하고 품격 있는 진료 환경</span></div>
+          </div>
+        </div>
+      </section>
 
-.hero .btn-reservation{
-    padding:12px 25px;
-    font-size:16px;
-    border:none;
-    border-radius:25px;
-    background:#2aa6a4;
-    color:white;
-    cursor:pointer;
-    text-decoration:none;
-    display:inline-block;
-}
+      <section class="section" id="philosophy">
+        <div class="container section-head-grid">
+          <div>
+            <div class="section-kicker">Our Philosophy</div>
+            <h2 class="section-title">미적 기준을 피부 진료로 확장하다</h2>
+          </div>
+          <div class="section-copy">
+            <p><strong>아름다움은 과한 변화가 아니라, 개인의 얼굴과 피부에 맞는 균형에서 시작됩니다.</strong></p>
+            <p>우리는 해부학적 이해와 심미적 감각을 바탕으로, 피부 상태와 노화의 양상을 세밀하게 분석하고 보다 자연스럽고 정제된 개선 방향을 제안합니다.</p>
+            <p>품격 있는 공간 경험 위에 의료적 신뢰를 더하는 것, 그것이 우리가 지향하는 피부과의 기준입니다.</p>
+          </div>
+        </div>
+      </section>
 
-.section{
-    padding:80px 40px;
-    text-align:center;
-}
+      <section class="section" id="expertise">
+        <div class="container">
+          <div class="split-head">
+            <div>
+              <div class="section-kicker">Expertise</div>
+              <h2 class="section-title">정교한 피부 진료를 위한 세 가지 기준</h2>
+            </div>
+            <div class="split-head-copy">
+              단순히 시술 종류를 나열하기보다, 진단의 깊이와 장비 운용의 정밀성, 그리고 개인별 맞춤 설계를 통해 보다 완성도 높은 피부과 경험을 제공합니다.
+            </div>
+          </div>
 
-.section h2{
-    font-size:32px;
-    margin-bottom:40px;
-}
+          <div class="cards-3">
+            <article class="card">
+              <div class="card-index">01</div>
+              <h3>정교한 진단과 균형 있는 미적 접근</h3>
+              <p>개인의 피부 상태와 얼굴 전체의 조화를 함께 고려하여 보다 자연스럽고 세련된 개선 방향을 제안합니다.</p>
+            </article>
+            <article class="card">
+              <div class="card-index">02</div>
+              <h3>검증된 프리미엄 장비와 복합 시술 설계</h3>
+              <p>리프팅, 탄력, 색소, 재생 등 다양한 피부 고민에 대응할 수 있도록 검증된 장비와 시술 옵션을 체계적으로 운영합니다.</p>
+            </article>
+            <article class="card">
+              <div class="card-index">03</div>
+              <h3>개인별 상태에 맞춘 1:1 맞춤 진료</h3>
+              <p>하나의 시술을 일괄적으로 적용하기보다 피부 타입과 노화 양상, 원하는 변화의 정도를 반영해 맞춤형으로 설계합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-.services{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
+      <section class="section" id="programs">
+        <div class="container">
+          <div class="program-wrap">
+            <div class="program-grid">
+              <div>
+                <div class="section-kicker">Signature Programs</div>
+                <h2 class="section-title">피부 고민에 맞춘 대표 프로그램</h2>
+                <p class="program-copy">리프팅, 탄력, 색소, 재생 등 핵심 피부 고민을 중심으로 개인별 상태와 목표에 맞는 프로그램을 정교하게 제안합니다.</p>
+              </div>
+              <div class="program-cards">
+                <article class="program-card">
+                  <div class="program-label">Program</div>
+                  <div class="program-name">Lifting &amp; Firming</div>
+                </article>
+                <article class="program-card">
+                  <div class="program-label">Program</div>
+                  <div class="program-name">Anti-aging Care</div>
+                </article>
+                <article class="program-card">
+                  <div class="program-label">Program</div>
+                  <div class="program-name">Pigment &amp; Brightening</div>
+                </article>
+                <article class="program-card">
+                  <div class="program-label">Program</div>
+                  <div class="program-name">Skin Booster &amp; Recovery</div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-.card{
-    width:250px;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
+      <section class="section" id="standards">
+        <div class="container">
+          <div class="center-head">
+            <div class="section-kicker">Our Standards</div>
+            <h2 class="section-title">하이엔드 클리닉이 지켜야 할 기준</h2>
+            <p class="center-copy">정교한 진료는 분명한 기준과 태도에서 시작됩니다. 우리가 지켜가는 원칙은 클리닉의 신뢰와 품격을 이루는 핵심입니다.</p>
+          </div>
 
-.card h3{
-    margin-bottom:10px;
-}
+          <div class="cards-3">
+            <article class="standard-card">
+              <div class="standard-bar"></div>
+              <h3>과한 변화보다 조화로운 개선을 지향합니다</h3>
+              <p>얼굴 전체의 인상과 피부의 상태를 함께 고려하여 보다 자연스럽고 정제된 방향의 변화를 추구합니다.</p>
+            </article>
+            <article class="standard-card">
+              <div class="standard-bar"></div>
+              <h3>의료적 신뢰를 모든 과정의 기준으로 삼습니다</h3>
+              <p>정확한 진단, 검증된 장비, 원칙을 지키는 시술 과정을 통해 신뢰할 수 있는 의료 서비스를 제공합니다.</p>
+            </article>
+            <article class="standard-card">
+              <div class="standard-bar"></div>
+              <h3>한 분 한 분에게 맞는 진료를 설계합니다</h3>
+              <p>획일적인 시술보다 개인의 피부 타입과 노화 양상, 라이프스타일을 고려한 맞춤형 접근을 중요하게 생각합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
-</head>
+      <section class="section">
+        <div class="container space-grid">
+          <div class="space-main">
+            <div class="section-kicker">Clinical Mood</div>
+            <h2 class="section-title">차분한 동선과 프라이빗한 진료 환경</h2>
+            <p class="space-copy">품격 있는 입지와 정제된 공간 구성은 진료 전후의 경험까지 편안하게 만듭니다. 상담부터 시술, 안내까지 보다 안정적이고 밀도 높은 흐름을 제공합니다.</p>
+          </div>
 
-<body>
+          <div class="space-cards">
+            <article class="space-card">
+              <div class="space-label">Space</div>
+              <div class="space-name">Private Consultation</div>
+            </article>
+            <article class="space-card">
+              <div class="space-label">Space</div>
+              <div class="space-name">Refined Waiting Experience</div>
+            </article>
+            <article class="space-card">
+              <div class="space-label">Space</div>
+              <div class="space-name">Calm Procedure Flow</div>
+            </article>
+            <article class="space-card">
+              <div class="space-label">Space</div>
+              <div class="space-name">High-touch Care</div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<header>
-<div class="logo">테스트 피부과</div>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-wrap">
+            <div class="contact-kicker">Contact</div>
+            <h2 class="contact-title">정교한 진료를 위한 첫 상담을 시작해보세요</h2>
+            <p class="contact-copy">고객의 피부 상태와 목표를 충분히 이해하는 것에서 모든 진료는 시작됩니다. 예약 및 상담을 통해 보다 맞춤화된 솔루션을 안내해드립니다.</p>
+            <div class="contact-actions">
+              <a href="#" class="btn-primary">상담 예약하기</a>
+              <a href="#" class="btn-secondary">오시는 길 보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<nav>
-<a href="#">병원소개</a>
-<a href="#">진료안내</a>
-<a href="#">피부시술</a>
-<a href="reservation.html">온라인예약</a>
-<a href="#">오시는길</a>
-</nav>
-</header>
-
-<section class="hero">
-<h1>건강하고 아름다운 피부</h1>
-<p>전문의가 직접 진료하는 피부과</p>
-<a href="reservation.html" class="btn-reservation">온라인 예약</a>
-</section>
-
-<section class="section">
-<h2>주요 진료 분야</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>여드름 치료</h3>
-<p>개인 피부 상태에 맞는 맞춤 치료</p>
-</div>
-
-<div class="card">
-<h3>레이저 시술</h3>
-<p>최신 레이저 장비를 활용한 치료</p>
-</div>
-
-<div class="card">
-<h3>피부 관리</h3>
-<p>전문적인 피부 관리 프로그램</p>
-</div>
-
-</div>
-</section>
-
-<footer>
-<p>© 2026 테스트 피부과 | 서울시 강남구</p>
-</footer>
-
-
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
