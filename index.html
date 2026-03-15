@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>테스트 피부과</title>
-
+<link rel="stylesheet" href="style.css">
 <style>
 body{
     margin:0;
@@ -58,7 +58,7 @@ nav a{
     margin-bottom:25px;
 }
 
-.hero button{
+.hero .btn-reservation{
     padding:12px 25px;
     font-size:16px;
     border:none;
@@ -66,6 +66,8 @@ nav a{
     background:#2aa6a4;
     color:white;
     cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
 }
 
 .section{
@@ -114,7 +116,7 @@ footer{
 <a href="#">병원소개</a>
 <a href="#">진료안내</a>
 <a href="#">피부시술</a>
-<a href="#">온라인예약</a>
+<a href="reservation.html">온라인예약</a>
 <a href="#">오시는길</a>
 </nav>
 </header>
@@ -122,7 +124,7 @@ footer{
 <section class="hero">
 <h1>건강하고 아름다운 피부</h1>
 <p>전문의가 직접 진료하는 피부과</p>
-<button>온라인 예약</button>
+<a href="reservation.html" class="btn-reservation">온라인 예약</a>
 </section>
 
 <section class="section">
@@ -149,7 +151,7 @@ footer{
 </section>
 
 <footer>
-<p>© 2026 테스트 사이트 | 서울시 강남구</p>
+<p>© 2026 테스트 피부과 | 서울시 강남구</p>
 </footer>
 
 </body>

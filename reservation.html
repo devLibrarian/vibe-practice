@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 예약 | 테스트 피부과</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2aa6a4;
+        }
+        .reservation-container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .reservation-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .reservation-header h1 {
+            color: #2aa6a4;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">테스트 피부과</a></div>
+    <nav>
+        <a href="index.html" style="text-decoration:none; color:#333; font-weight:500;">홈으로</a>
+    </nav>
+</header>
+
+<div class="reservation-container">
+    <div class="reservation-header">
+        <h1>온라인 예약 문의</h1>
+        <p>상담 내용을 남겨주시면 확인 후 연락드리겠습니다.</p>
+    </div>
+
+    <form id="reservation-form">
+        <div class="form-group">
+            <label for="name">성함</label>
+            <input type="text" id="name" name="name" required placeholder="성함을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="phone" required placeholder="010-0000-0000">
+        </div>
+        <div class="form-group">
+            <label for="date">희망 날짜</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="message">문의 내용</label>
+            <textarea id="message" name="message" rows="6" placeholder="문의하실 내용을 입력해주세요"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">예약 신청하기</button>
+    </form>
+    
+    <div style="text-align: center;">
+        <a href="index.html" class="back-home">← 메인으로 돌아가기</a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 테스트 피부과 | 서울시 강남구</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
